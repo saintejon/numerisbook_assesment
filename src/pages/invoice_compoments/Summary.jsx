@@ -2,6 +2,7 @@ import React from "react";
 
 import CustomIcon from "../../components/icons/CustomIcon";
 import { formatToCurrency } from "../../utilities/formatters";
+import Card from "../../components/layouts/Card";
 
 const Summary = ({ summary }) => {
       const getBackgroundColor = (title) =>
@@ -16,7 +17,7 @@ const Summary = ({ summary }) => {
                   : "#E0E0E0";
 
       return (
-            <div className="bg-white rounded-2xl  py-6 px-8 border border-slate-100 min-w-[250px]">
+            <Card>
                   <CustomIcon text="Overview" size={24} />
                   <div className="flex gap-2 items-center mt-2">
                         <div>
@@ -53,7 +54,7 @@ const Summary = ({ summary }) => {
                               </span>
                         </p>
                   </div>
-            </div>
+            </Card>
       );
 };
 

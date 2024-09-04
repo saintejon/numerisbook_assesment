@@ -12,7 +12,7 @@ export function formatToCurrency(number, currency = "USD", locale = "en-US") {
       return { main, cents: cents ? "." + cents : "" };
 }
 
-function formatDate(date) {
+export function formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
             date
@@ -31,4 +31,23 @@ function formatDate(date) {
                   : "th");
 
       return formattedDate.replace(/\d+/, dayWithSuffix);
+}
+
+export function formatActivityDate(dateString) {
+      const date = new Date(dateString);
+      const now = new Date();
+
+      const isYesterday =
+            now.getDate() - date.getDate() === 1 &&
+            now.getMonth() === date.getMonth() &&
+            now.getFullYear() === date.getFullYear();
+
+      const formattedTime = date.toLocaleTimeString("en-US", {
+            hour: "2-digit",
+            minute: "2-digit",
+      });
+
+      return `${
+            isYesterday ? "Yesterday" : date.toLocaleDateString("en-US")
+      }, ${formattedTime}`;
 }

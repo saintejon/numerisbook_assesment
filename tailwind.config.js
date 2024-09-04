@@ -22,6 +22,15 @@ export default {
                   fontFamily: {
                         Neue: ["NeueHaasDisplay", "sans-serif"],
                   },
+                  keyframes: {
+                        bounce: {
+                              "0%, 100%": { transform: "translateY(0)" },
+                              "50%": { transform: "translateY(-20px)" },
+                        },
+                  },
+                  animation: {
+                        "bounce-infinite": "bounce 1s infinite",
+                  },
             },
       },
       plugins: [],

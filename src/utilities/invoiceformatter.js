@@ -1,3 +1,5 @@
+import { formatDate } from "./formatters";
+
 // Function to group invoices by date
 export function groupInvoicesByDate(invoices) {
       return invoices.reduce((acc, invoice) => {
@@ -13,7 +15,7 @@ export function groupInvoicesByDate(invoices) {
 }
 
 // Helper function to get status badge color
-const getBadgeColor = (status) => {
+export const getBadgeColor = (status) => {
       switch (status) {
             case "PAID":
                   return "bg-green-100 text-green-700"; // Adjust colors according to your design

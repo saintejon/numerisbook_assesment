@@ -29,7 +29,7 @@ const DashboardLayout = () => {
                         <SideBar />
                   </div>
                   {/* OUTLET================================================================= */}
-                  <div className=" w-full  min-h-screen bg-[#F5F6FA]">
+                  <div className=" w-full  h-screen bg-[#F5F6FA] ">
                         <Outlet />
                   </div>
             </div>
