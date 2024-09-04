@@ -24,3 +24,41 @@ export const account_overview = [
             color: "yellow",
       },
 ];
+
+const invoices = [
+      {
+            id: "1023494 - 2304",
+            date: new Date("2022-11-27"),
+            dueDate: new Date("2023-05-19"),
+            amount: 1311750.12,
+            status: "PAID", // Can be "PAID", "OVERDUE", "DRAFT", "PENDING PAYMENT"
+      },
+      {
+            id: "1023494 - 2304",
+            date: new Date("2022-11-27"),
+            dueDate: new Date("2023-05-19"),
+            amount: 1311750.12,
+            status: "OVERDUE",
+      },
+      {
+            id: "1023494 - 2304",
+            date: new Date("2022-12-08"),
+            dueDate: new Date("2023-05-19"),
+            amount: 1311750.12,
+            status: "DRAFT",
+      },
+      {
+            id: "1023494 - 2304",
+            date: new Date("2022-12-08"),
+            dueDate: new Date("2023-05-19"),
+            amount: 1311750.12,
+            status: "PENDING PAYMENT",
+      },
+      {
+            id: "1023494 - 2304",
+            date: new Date("2022-12-08"),
+            dueDate: new Date("2023-05-19"),
+            amount: 1311750.12,
+            status: "PAID",
+      },
+];

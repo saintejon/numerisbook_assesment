@@ -11,3 +11,24 @@ export function formatToCurrency(number, currency = "USD", locale = "en-US") {
 
       return { main, cents: cents ? "." + cents : "" };
 }
+
+function formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
+            date
+      );
+
+      // Add ordinal suffix to the day
+      const day = date.getDate();
+      const dayWithSuffix =
+            day +
+            (day % 10 === 1 && day !== 11
+                  ? "st"
+                  : day % 10 === 2 && day !== 12
+                  ? "nd"
+                  : day % 10 === 3 && day !== 13
+                  ? "rd"
+                  : "th");
+
+      return formattedDate.replace(/\d+/, dayWithSuffix);
+}
