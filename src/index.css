@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+      font-family: "Neue";
+      src: url("./fonts/NeueHaasDisplayRoman.ttf") format("ttf");
+      font-weight: normal;
+}
+@font-face {
+      font-family: "Neue";
+      src: url("./fonts/NeueHaasDisplayBold.ttf") format("ttf");
+      font-weight: bold;
+}
+@font-face {
+      font-family: "Neue";
+      src: url("./fonts/NeueHaasDisplayMediu.ttf") format("ttf");
+      font-weight: 400;
+}
