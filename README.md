@@ -52,6 +52,7 @@ The app will be running on http://localhost:5173.
 
 # Folder Structure
 
+```bash
 .
 ├── public/ # Static files
 ├── src/ # Main source code
@@ -60,7 +61,7 @@ The app will be running on http://localhost:5173.
 │ ├── data/ # Local data store
 │ ├── layouts/ # Project wide ui components
 │ ├── pages/ # Page components
-│ ├── [page_name]\_compoments/ # Page specific components
+│    ├── [page_name]\_compoments/ # Page specific components
 │ ├── Utilities/ # Helper utility functions
 │ ├── App.jsx # Main app component
 │ ├── index.jsx # Entry point for React
@@ -73,6 +74,8 @@ The app will be running on http://localhost:5173.
 ├── postcss.config.js # PostCSS configuration
 ├── tailwind.config.js# Tailwind CSS configuration
 └── vite.config.js # Vite configuration
+
+```
 
 # Built With
 
