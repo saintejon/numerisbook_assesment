@@ -1,3 +1,5 @@
+export const fullname = "Kevin Owena";
+
 export const account_overview = [
       {
             title: "TOTAL PAID",
@@ -72,7 +74,7 @@ export const recentActivities = [
                   id: "00239434",
                   creator: "Olaniyi Ojo Adewale",
             },
-            avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png", // URL of the avatar image
+            avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
       },
       {
             id: 2,
@@ -103,5 +105,131 @@ export const recentActivities = [
                   creator: "Olaniyi Ojo Adewale",
             },
             avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653726/awkshunavatars/q85catpupidafbnn6nmc.png",
+      },
+];
+
+export const invoiceData = [
+      {
+            invoiceNumber: "1023494 - 2304",
+            sender: {
+                  name: "Fabulous Enterprise",
+                  address: "4356 Jenkins Blvd, 44256 Gains, ME",
+                  phone: "+356 999 876 215",
+                  email: "info@fabulousenterprises.com",
+                  avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653726/awkshunavatars/q85catpupidafbnn6nmc.png",
+            },
+            customer: {
+                  name: "Olaniyi Ojo Adewale",
+                  address: "835 Gifford Pike, 01275 Gooseville, VT",
+                  phone: "+234 907 213 7515",
+                  email: "ojo.olaniyi@customers.com",
+                  avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
+            },
+            invoiceDetails: {
+                  invoiceDate: "March 30th, 2023",
+                  dueDate: "May 19th, 2023",
+                  billingCurrency: "USD ($)",
+            },
+            paymentType: "partial",
+            items: [
+                  {
+                        description: "Email Marketing",
+                        quantity: 10,
+                        unitPrice: 1500,
+                        total: 15000,
+                  },
+                  {
+                        description: "Video looping effect",
+                        quantity: 6,
+                        unitPrice: 1110.5,
+                        total: 6663.0,
+                  },
+                  {
+                        description: "Graphic design for emails",
+                        quantity: 7,
+                        unitPrice: 2750,
+                        total: 19250.0,
+                  },
+                  {
+                        description: "Video looping effect",
+                        quantity: 6,
+                        unitPrice: 1110.5,
+                        total: 6663.0,
+                  },
+            ],
+            summary: {
+                  subtotal: 6697200.0,
+                  discount: 167430.0,
+                  totalAmountDue: 6529770.0,
+            },
+            paymentInformation: {
+                  accountName: "Fabulous Enterprise",
+                  accountNumber: "10203040",
+                  achRoutingNo: "March 30th, 2023",
+                  dueDate: "May 19th, 2023",
+                  bankName: "USD ($)",
+            },
+            reminders: [
+                  {
+                        value: 14,
+                        title: "14 days before due date",
+                        active: true, // Set to true if the reminder is currently active
+                  },
+                  {
+                        value: 7,
+                        title: "7 days before due date",
+                        active: true,
+                  },
+                  {
+                        value: 3,
+                        title: "3 days before due date",
+                        active: false,
+                  },
+                  {
+                        value: 1,
+                        title: "1 day before due date",
+                        active: false,
+                  },
+                  {
+                        value: 0,
+                        title: "On the due date",
+                        active: false,
+                  },
+            ],
+            invoiceActivity: [
+                  {
+                        id: 1,
+                        user: "You",
+                        time: new Date("2022-09-27"),
+                        action: "Created invoice",
+                        details: "00239434/Olaniyi Ojo Adewale",
+                        avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
+                  },
+                  {
+                        id: 2,
+                        user: "You",
+                        time: new Date("2022-09-27"),
+                        action: "Payment Confirmed",
+                        details: "You manually confirmed a partial payment of $503,000.00",
+                        avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
+                  },
+                  {
+                        id: 3,
+                        user: "You",
+                        time: new Date("2022-09-27"),
+                        action: "Payment Confirmed",
+                        details: "You manually confirmed a full payment of $6,000,000.00",
+                        avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
+                  },
+                  {
+                        id: 4,
+                        user: "You",
+                        time: new Date("2022-10-27"),
+                        action: "Sent Invoice",
+                        details: "Sent invoice 00239434/Olaniyi Ojo Adewale to Olaniyi Ojo Adewale",
+                        avatar: "https://res.cloudinary.com/de0jr8mcm/image/upload/v1697653728/awkshunavatars/nh8k72txhwihglii2ef9.png",
+                  },
+            ],
+            notes: "Thank you for your patronage",
       },
 ];

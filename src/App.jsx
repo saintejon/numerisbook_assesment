@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
       return (
-            <div className="App trial-font text-sm transition-all text-slate-800">
+            <div className="App  transition-all text-[#373B47]">
                   <BrowserRouter>
                         <Routes>
                               <Route path="/" element={<DashboardLayout />}>

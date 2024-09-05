@@ -4,7 +4,7 @@ import money from "../../assets/images/money.png";
 
 const InvoiceActions = () => {
       return (
-            <div className="grid grid-cols-3 gap-6 overflow-x-scroll pb-2 scrollbar-hide">
+            <div className="lg:grid flex grid-cols-3 gap-6 overflow-x-scroll pb-2 scrollbar-hide">
                   <div className={`${stlye} bg-primary`}>
                         <div className="mb-2">
                               <img
@@ -55,6 +55,6 @@ const InvoiceActions = () => {
       );
 };
 
-const stlye = "rounded-2xl px-8 py-8 cursor-pointer  col-span-1";
+const stlye = "rounded-2xl px-8 py-8 cursor-pointer  col-span-1 min-w-fit";
 
 export default InvoiceActions;

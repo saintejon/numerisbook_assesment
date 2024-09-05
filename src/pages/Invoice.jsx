@@ -10,11 +10,11 @@ import RecentActivities from "./invoice_compoments/RecentActivities";
 
 const Invoice = () => {
       return (
-            <div className="overflow-y-scroll overscroll-y-auto mx-4 md:mx-6 my-6 h-[97%]">
+            <div className="overflow-y-scroll overscroll-y-auto mx-4 md:mx-6 my-4 h-[97%]">
                   <PageTitle title={"Invoice"} />
                   <div className="overflow-y-scroll lg:h-[90%]">
                         <ActionBlock />
-                        <div className="grid grid-cols-4 gap-4 overflow-x-scroll scrollbar-hide">
+                        <div className="lg:grid flex grid-cols-4 gap-4 overflow-x-scroll scrollbar-hide">
                               {account_overview.length > 0 &&
                                     account_overview.map((summary, index) => (
                                           <Summary

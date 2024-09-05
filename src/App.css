@@ -2,6 +2,11 @@ body {
       font-family: "NeueHaasDisplay", sans-serif;
 }
 
+.blurred-background {
+      background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+      backdrop-filter: blur(8px); /* Apply the blur effect */
+      background-color: rgba(0, 0, 0, 0.5);
+}
 /* HIDE THE SCROLLBAR */
 .scrollbar-hide::-webkit-scrollbar {
       display: none;

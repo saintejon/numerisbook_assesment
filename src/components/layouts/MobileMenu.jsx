@@ -4,17 +4,8 @@ import Hamburger from "../icons/Hamburger";
 
 import CustomIcon from "../icons/CustomIcon";
 
-const SideBar = () => {
+const MobileMenu = ({ toggleMenu }) => {
       const location = useLocation();
-
-      const windowWidth = window.innerWidth;
-      const [showLinks, setShowLinks] = useState(
-            windowWidth > 1024 ? true : false
-      );
-
-      const sidebarWidth = showLinks ? 250 : 50;
-
-      const toggleLinks = () => setShowLinks(!showLinks);
 
       const routes = [
             {
@@ -49,21 +40,22 @@ const SideBar = () => {
       ];
 
       return (
-            <div
-                  className="  bg-white relative ml-0 min-h-screen overflow-y-scroll   transition-all duration-200 ease-out text-[#697598] pl-2"
-                  style={{ minWidth: sidebarWidth }}
-            >
+            <div className="  bg-white relative ml-0 min-h-screen overflow-y-scroll   transition-all duration-200 ease-out text-[#697598] pl-2 shadow-xl min-w-[250px]">
                   <div className="flex items-center ml-2 gap-4 ">
                         <div
-                              className="mt-6 cursor-pointer "
-                              onClick={toggleLinks}
+                              className="mt-6 cursor-pointer"
+                              onClick={toggleMenu}
                         >
                               <Hamburger color="#3b42c4" />
                         </div>
                   </div>
                   <div className=" min-w-fit">
                         {routes.map((route, index) => (
-                              <div key={index} className="mb-4 h-9 ">
+                              <div
+                                    key={index}
+                                    className="my-4 h-9 "
+                                    onClick={toggleMenu}
+                              >
                                     <Link to={route.path}>
                                           <div
                                                 className={
@@ -81,15 +73,13 @@ const SideBar = () => {
                                                                   }
                                                             />
                                                             <div>
-                                                                  {showLinks && (
-                                                                        <div className="text-[14px] ml-2">
-                                                                              <p>
-                                                                                    {
-                                                                                          route.name
-                                                                                    }
-                                                                              </p>
-                                                                        </div>
-                                                                  )}
+                                                                  <div className="text-[14px] ml-2">
+                                                                        <p>
+                                                                              {
+                                                                                    route.name
+                                                                              }
+                                                                        </p>
+                                                                  </div>
                                                             </div>
                                                       </div>
                                                 </div>
@@ -102,4 +92,4 @@ const SideBar = () => {
       );
 };
 
-export default SideBar;
+export default MobileMenu;
