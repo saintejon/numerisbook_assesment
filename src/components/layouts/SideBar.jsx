@@ -8,6 +8,7 @@ const SideBar = () => {
       const location = useLocation();
 
       const windowWidth = window.innerWidth;
+      // CONDITIONALLY SHOW OR HIDE SIDEBAR BASED ON SCREEN SIZE=============================================
       const [showLinks, setShowLinks] = useState(
             windowWidth > 1024 ? true : false
       );
@@ -16,6 +17,7 @@ const SideBar = () => {
 
       const toggleLinks = () => setShowLinks(!showLinks);
 
+      // ROUTE HANDLING FOR SIDEBAR NAVIGATION=============================================
       const routes = [
             {
                   name: "Getting Started",
@@ -61,6 +63,7 @@ const SideBar = () => {
                               <Hamburger color="#3b42c4" />
                         </div>
                   </div>
+                  {/* // RENDER ROUTES ON THE SIDEBAR============================================= */}
                   <div className=" min-w-fit">
                         {routes.map((route, index) => (
                               <div key={index} className="mb-4 h-9 ">
@@ -75,6 +78,7 @@ const SideBar = () => {
                                           >
                                                 <div className="flex justify-between items-center">
                                                       <div className="flex  items-center">
+                                                            {/* CUSTOME SITE-WIDE ICON============================================= */}
                                                             <CustomIcon
                                                                   text={
                                                                         route.name

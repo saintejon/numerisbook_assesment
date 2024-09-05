@@ -6,6 +6,8 @@ import SideBar from "./SideBar";
 import MobileMenu from "./MobileMenu";
 
 const PageTitle = ({ title }) => {
+      // =============================================CUSTOM PAGE TITLE COMPONENT HOUSING NOTIFICATIONS AND PROFILE ACTIONS
+      // =============================================CUSTOM PAGE TITLE COMPONENT HOUSING NOTIFICATIONS AND PROFILE ACTIONS
       const firstChars = fullname
             .split(" ")
             .map((word) => word.charAt(0))

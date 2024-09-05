@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+
 # numerisbook_assesment
+
 =======
+
 # NumeriBook FrontEnd Assessment submission
 
 # Features
@@ -53,6 +56,10 @@ yarn dev
 
 The app will be running on http://localhost:5173.
 
+# IMPORTANT
+
+CLICK ON AN INVOICE ITEM FROM THE RECENT INVOICE ON THE INVOICE PAGE TO SHOW INVOICE POPUP
+
 # Folder Structure
 
 ```bash
@@ -85,4 +92,4 @@ The app will be running on http://localhost:5173.
 - Vite - Next Generation Frontend Tooling
 - React - JavaScript library for building user interfaces
 - Tailwind CSS - Utility-first CSS framework
->>>>>>> master
+     > > > > > > > master

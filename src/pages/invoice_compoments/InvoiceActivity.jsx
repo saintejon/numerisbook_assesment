@@ -2,6 +2,9 @@ import React from "react";
 import { formatActivityDate } from "../../utilities/formatters";
 
 const InvoiceActivity = ({ activity }) => {
+      // INDIVIDUAL INVOICE ACTIVITY=============================================
+      // INDIVIDUAL INVOICE ACTIVITY=============================================
+      // INDIVIDUAL INVOICE ACTIVITY=============================================
       return (
             <div className="flex items-start space-x-4 mb-4">
                   <img

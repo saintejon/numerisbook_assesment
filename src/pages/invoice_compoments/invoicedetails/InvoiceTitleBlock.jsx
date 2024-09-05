@@ -3,6 +3,8 @@ import MainButton from "../../../components/inputs/MainButton";
 import PaymentType from "./PaymentType";
 
 const InvoiceTitleBlock = ({ invoice }) => {
+      // CONDITIONALY SHOW THE DROPDOWN FOR THE SHOW MORE BUTTON =============================================
+      // CONDITIONALY SHOW THE DROPDOWN FOR THE SHOW MORE BUTTON =============================================
       const [showMore, setShowMore] = useState(false);
       return (
             <div className="md:flex items-center justify-between gap-16 relative">
@@ -35,6 +37,8 @@ const InvoiceTitleBlock = ({ invoice }) => {
                               textColor={"text-primary"}
                               onClick={() => setShowMore(!showMore)}
                         />
+
+                        {/* CONDITIONALY RENDER THE SHOWMORE POUPUP */}
                         {showMore && (
                               <div className="uppercase text-slate-500 text-[12px] font-medium absolute right-4 top-14 z-50 bg-white rounded-2xl px-4 border border-slate-300 w-[200px] py-3 shadow-xl">
                                     <p className="cursor-pointer my-3">

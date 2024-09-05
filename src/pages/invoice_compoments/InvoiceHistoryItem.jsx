@@ -3,6 +3,10 @@ import { formatDate, formatToCurrency } from "../../utilities/formatters";
 import { getBadgeColor } from "../../utilities/invoiceformatter";
 
 const InvoiceHistoryItem = ({ invoice }) => {
+      // REUSABLE INVOICE HISTORY ITEM =============================================
+      // REUSABLE INVOICE HISTORY ITEM =============================================
+      // REUSABLE INVOICE HISTORY ITEM =============================================
+      // REUSABLE INVOICE HISTORY ITEM =============================================
       return (
             <div className="flex gap-6 justify-between items-center mb-4 p-2 ml-4 cursor-pointer hover:bg-slate-50 rounded-xl transition-all duration-200 ease-in-out ">
                   <div className="min-w-fit">

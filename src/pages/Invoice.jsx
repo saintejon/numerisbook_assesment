@@ -14,6 +14,7 @@ const Invoice = () => {
                   <PageTitle title={"Invoice"} />
                   <div className="overflow-y-scroll lg:h-[90%]">
                         <ActionBlock />
+                        {/* ============================================= RENDER INDIVIDUAL ACCOUNT SUMMARY */}
                         <div className="lg:grid flex grid-cols-4 gap-4 overflow-x-scroll scrollbar-hide">
                               {account_overview.length > 0 &&
                                     account_overview.map((summary, index) => (
@@ -24,7 +25,10 @@ const Invoice = () => {
                                     ))}
                         </div>
                         <TextDivider color={"#fff"} text={"Invoice Actions"} />
+                        {/* ============================================= QUICK INVOICE ACTIONS */}
                         <InvoiceActions />
+
+                        {/* =============================================RENDER RECENT ACTIONS AND ACTIVITIES */}
                         <div className="lg:grid grid-cols-5 gap-6">
                               <div className="col-span-3">
                                     <RecentInvoices />

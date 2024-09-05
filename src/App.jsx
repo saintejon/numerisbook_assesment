@@ -8,6 +8,7 @@ function App() {
             <div className="App  transition-all text-[#373B47]">
                   <BrowserRouter>
                         <Routes>
+                              {/* SET THE FIRST ELEMENT ON ROUTE LOAD==================================================== */}
                               <Route path="/" element={<DashboardLayout />}>
                                     <Route index element={<Invoice />} />
                                     <Route

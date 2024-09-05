@@ -13,6 +13,7 @@ const InvoiceDetails = ({ invoiceId }) => {
             (inv) => inv.invoiceNumber === invoiceId
       );
 
+      //   IF THERE'S NO ITEM FOUND PROBABLY FROM FAULTY DATA OR FAILED API CALL, RENDER NOT FOUND
       if (!invoice)
             return (
                   <div className="flex justify-around items-center">
@@ -22,14 +23,25 @@ const InvoiceDetails = ({ invoiceId }) => {
 
       return (
             <div>
+                  {/* TITLE BLOCK HOLDING THE INVOICE INFO AND QUICK ACTIONS============================================= */}
+
                   <InvoiceTitleBlock invoice={invoice} />
 
                   <div className="lg:max-h-[80vh] overflow-y-scroll">
+                        {/* SCROLLABLE REMINDER COMPONENT FOR============================================= */}
+                        {/* SCROLLABLE REMINDER COMPONENT FOR============================================= */}
+                        {/* SCROLLABLE REMINDER COMPONENT FOR============================================= */}
                         <Reminders invoice={invoice} />
                         <div className="lg:grid  grid-cols-5 gap-x-8 ">
+                              {/* INVOICE DETAILS COMPONENT============================================= */}
+                              {/* INVOICE DETAILS COMPONENT============================================= */}
                               <div className="col-span-3 max-w-[700px]">
                                     <Details invoice={invoice} />
                               </div>
+
+                              {/* INVOICE ACTIVITIES ============================================= */}
+                              {/* INVOICE ACTIVITIES ============================================= */}
+                              {/* INVOICE ACTIVITIES ============================================= */}
                               <div className="col-span-2 max-h-full overflow-y-scroll mt-4 lg:mt-0 mb-6">
                                     <Activities
                                           activities={invoice.invoiceActivity}

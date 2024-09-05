@@ -5,6 +5,7 @@ import { formatToCurrency } from "../../utilities/formatters";
 import Card from "../../components/layouts/Card";
 
 const Summary = ({ summary }) => {
+      // ============================================= CUSTOM BACKGROUND COLORS FOR UNIQUE NUMBER DISPLAY
       const getBackgroundColor = (title) =>
             title === "TOTAL PAID"
                   ? "#B6FDD3" // Green
@@ -29,7 +30,7 @@ const Summary = ({ summary }) => {
                               <div
                                     style={{
                                           backgroundColor: getBackgroundColor(
-                                                summary.title
+                                                summary?.title
                                           ),
                                     }}
                                     className="rounded-full py-1 px-3"

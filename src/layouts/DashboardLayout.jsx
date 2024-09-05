@@ -21,12 +21,14 @@ const DashboardLayout = () => {
                   <div className="lg:block hidden">
                         <SideBar />
                   </div>
+                  {/* MOBILE MENU TOGGLE BUTTON==================================================== */}
                   <div
                         className="mr-3 cursor-pointer block lg:hidden fixed top-7 ml-1 z-50 mt-[2px]"
                         onClick={toggleMenu}
                   >
                         <Hamburger color="#3b42c4" />
                   </div>
+                  {/* SHOW/HIDE MOBILE MENU==================================================== */}
                   <div
                         className={`${
                               mobileMenuHidden
@@ -36,7 +38,7 @@ const DashboardLayout = () => {
                   >
                         <MobileMenu toggleMenu={toggleMenu} />
                   </div>
-                  {/* OUTLET================================================================= */}
+                  {/* RENDERED OUTLET================================================================= */}
                   <div className=" w-full  h-screen bg-[#F5F6FA] ">
                         <Outlet />
                   </div>

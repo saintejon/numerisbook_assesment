@@ -5,6 +5,10 @@ import { recentActivities } from "../../data/dataStore";
 import InvoiceActivity from "./InvoiceActivity";
 
 const RecentActivities = () => {
+      // RECENT ACTIVITY COMPONENT =============================================
+      // RECENT ACTIVITY COMPONENT =============================================
+      // RECENT ACTIVITY COMPONENT =============================================
+      // RECENT ACTIVITY COMPONENT =============================================
       return (
             <div className="mt-4">
                   <Card>

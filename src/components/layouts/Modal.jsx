@@ -2,6 +2,11 @@ import { Add, CloseCircle } from "iconsax-react";
 import React from "react";
 
 const Modal = ({ modalVisible = false, toggleModal, children }) => {
+      // CUSTOM SITE-WIDE MODAL POPUP, NEST CHILDREN INSIDE TO RENDER NEEDED COMPONENTS =============================================
+      // CUSTOM SITE-WIDE MODAL POPUP, NEST CHILDREN INSIDE TO RENDER NEEDED COMPONENTS =============================================
+      // CUSTOM SITE-WIDE MODAL POPUP, NEST CHILDREN INSIDE TO RENDER NEEDED COMPONENTS =============================================
+      // CUSTOM SITE-WIDE MODAL POPUP, NEST CHILDREN INSIDE TO RENDER NEEDED COMPONENTS =============================================
+      // CUSTOM SITE-WIDE MODAL POPUP, NEST CHILDREN INSIDE TO RENDER NEEDED COMPONENTS =============================================
       if (modalVisible)
             return (
                   <div

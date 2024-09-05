@@ -4,11 +4,15 @@ const MainButton = ({
       isSubmiting = false,
       text = "Enter Text",
       bgcolor = "bg-primary",
-      onClick,
-      altText,
+      onClick = () => {},
+      altText = "Please wait",
       borderColor,
       textColor = "text-white",
 }) => {
+      // ============================================= CUSTOM SITE WIDE BUTTOM
+      // ============================================= CUSTOM SITE WIDE BUTTOM
+      // ============================================= CUSTOM SITE WIDE BUTTOM
+      // ============================================= CUSTOM SITE WIDE BUTTOM
       return (
             <div className="">
                   <button

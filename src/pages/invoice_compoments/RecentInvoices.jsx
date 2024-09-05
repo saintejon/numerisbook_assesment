@@ -12,6 +12,10 @@ const RecentInvoices = () => {
 
       const [invoiceId, setInvoiceId] = useState("");
       const toggleModal = () => setModalVisible(!modalVisible);
+
+      // GROUP INCOICES BY DATE =============================================
+      // GROUP INCOICES BY DATE =============================================
+      // GROUP INCOICES BY DATE =============================================
       const groupedInvoices = groupInvoicesByDate(invoices);
       return (
             <div className="mt-4">
@@ -34,6 +38,10 @@ const RecentInvoices = () => {
                               {Object.keys(groupedInvoices).map(
                                     (dateKey, index) => (
                                           <div key={index} className="mb-6">
+                                                {/* GROUPED DATE ITEM ============================================= */}
+                                                {/* GROUPED DATE ITEM ============================================= */}
+                                                {/* GROUPED DATE ITEM ============================================= */}
+                                                {/* GROUPED DATE ITEM ============================================= */}
                                                 <h3 className="text-gray-600 text-sm font-semibold mb-2">
                                                       {dateKey}
                                                 </h3>
@@ -48,6 +56,9 @@ const RecentInvoices = () => {
                                                                   }}
                                                                   key={idx}
                                                             >
+                                                                  {/* START OF INVOICE ITEM RENDER ============================================= */}
+                                                                  {/* START OF INVOICE ITEM RENDER ============================================= */}
+                                                                  {/* START OF INVOICE ITEM RENDER ============================================= */}
                                                                   <InvoiceHistoryItem
                                                                         invoice={
                                                                               invoice
@@ -61,7 +72,9 @@ const RecentInvoices = () => {
                               )}
                         </div>
                   </Card>
-
+                  {/* CUSTOM MODAL IMPLEMENTATION FOR INVOICE POPUP ============================================= */}
+                  {/* CUSTOM MODAL IMPLEMENTATION FOR INVOICE POPUP ============================================= */}
+                  {/* CUSTOM MODAL IMPLEMENTATION FOR INVOICE POPUP ============================================= */}
                   <Modal toggleModal={toggleModal} modalVisible={modalVisible}>
                         <InvoiceDetails invoiceId={invoiceId} />
                   </Modal>

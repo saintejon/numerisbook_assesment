@@ -9,6 +9,7 @@ import {
 import React from "react";
 
 const CustomIcon = ({ text, size = 20 }) => {
+      // SWITCH STATEMENT TO RENDER SVGS ICONS BASED ON THE TEXT PROVIDED=============================================
       switch (text) {
             case "Getting Started":
                   return <Home2 size="20" color="#697598" variant="TwoTone" />;
