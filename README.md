@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-
-# numerisbook_assesment
-
-=======
-
-# NumeriBook FrontEnd Assessment submission
+# NumerisBook FrontEnd Assessment submission
 
 # Features
 
@@ -20,7 +14,7 @@ Prerequisites
 
 Ensure you have the following installed on your system:
 
-- Node.js (v18 or higher)
+- Node.js (v17 or higher)
 - npm or Yarn
 
 Installation
