@@ -7,7 +7,7 @@ const TextDivider = ({ text, color }) => {
                         <p className="text-lg font-medium">{text}</p>
                   </div>
                   <div
-                        className="h-[1px] w-[70%]"
+                        className="h-[1px] w-[80%]"
                         style={{ backgroundColor: color }}
                   ></div>
             </div>

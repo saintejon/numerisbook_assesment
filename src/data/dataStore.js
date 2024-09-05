@@ -133,31 +133,40 @@ export const invoiceData = [
             paymentType: "partial",
             items: [
                   {
-                        description: "Email Marketing",
+                        title: "Email Marketing",
+                        description:
+                              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
                         quantity: 10,
                         unitPrice: 1500,
                         total: 15000,
                   },
                   {
-                        description: "Video looping effect",
+                        title: "Video looping effect",
+                        description:
+                              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
                         quantity: 6,
                         unitPrice: 1110.5,
                         total: 6663.0,
                   },
                   {
-                        description: "Graphic design for emails",
+                        title: "Graphic design for emails",
+                        description:
+                              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
                         quantity: 7,
                         unitPrice: 2750,
                         total: 19250.0,
                   },
                   {
-                        description: "Video looping effect",
+                        title: "Video looping effect",
+                        description:
+                              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
                         quantity: 6,
                         unitPrice: 1110.5,
                         total: 6663.0,
                   },
             ],
             summary: {
+                  discountPercentage: 0.025,
                   subtotal: 6697200.0,
                   discount: 167430.0,
                   totalAmountDue: 6529770.0,
@@ -165,9 +174,10 @@ export const invoiceData = [
             paymentInformation: {
                   accountName: "Fabulous Enterprise",
                   accountNumber: "10203040",
-                  achRoutingNo: "March 30th, 2023",
+                  achRoutingNo: "242323223",
                   dueDate: "May 19th, 2023",
-                  bankName: "USD ($)",
+                  bankName: "Wells fargo bank",
+                  bankAddress: "4356 Jenkins Blvd, 44256 Gains, ME",
             },
             reminders: [
                   {

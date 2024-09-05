@@ -10,7 +10,7 @@ const Activities = ({ activities }) => {
 
                   {activities.length > 0 &&
                         activities.map((activity, index) => (
-                              <div key={index} className="flex gap-2">
+                              <div key={index} className="flex gap-4">
                                     <div>
                                           <img
                                                 src={activity.avatar}

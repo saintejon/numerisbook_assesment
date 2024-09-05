@@ -22,7 +22,7 @@ const Modal = ({ modalVisible = false, toggleModal, children }) => {
                               </div>
                               <div
                                     onClick={() => {}}
-                                    className="bg-white rounded-3xl overflow-y-scroll min-h-[500px] p-4"
+                                    className="bg-white rounded-3xl overflow-y-scroll min-h-[500px] p-4 max-h-[95vh]"
                               >
                                     {children}
                               </div>

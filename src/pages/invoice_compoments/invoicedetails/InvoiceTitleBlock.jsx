@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MainButton from "../../../components/inputs/MainButton";
+import PaymentType from "./PaymentType";
 
 const InvoiceTitleBlock = ({ invoice }) => {
       const [showMore, setShowMore] = useState(false);
@@ -12,6 +13,7 @@ const InvoiceTitleBlock = ({ invoice }) => {
                         <p className="text-slate-500 text-[10px]">
                               View the details and activity of this invoice
                         </p>
+                        <PaymentType invoice={invoice} />
                   </div>
                   <div className="flex gap-2 items-center">
                         <MainButton
